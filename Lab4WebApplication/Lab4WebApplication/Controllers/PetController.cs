@@ -61,6 +61,13 @@ namespace Lab4WebApplication.Controllers
             return View();
         }
 
+        public ActionResult Details(int id)
+        {
+            var pet = GetPet(id);
+
+            return View(pet);
+        }
+
         private void UpdatePet(PetViewModel petViewModel)
         {
             var dbContext = new AppDbContext();
