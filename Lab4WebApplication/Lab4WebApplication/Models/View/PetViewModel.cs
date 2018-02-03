@@ -8,7 +8,6 @@ namespace Lab4WebApplication.Models.View
 {
     public class PetViewModel
     {
-        [Key]
         public int Id { get; set; }
 
         [Required]

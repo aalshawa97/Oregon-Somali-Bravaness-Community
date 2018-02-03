@@ -55,7 +55,7 @@ namespace Lab4WebApplication.Controllers
             {
                 UpdatePet(petViewModel);
 
-                return RedirectToAction("List");
+                return RedirectToAction("List",new { userid =  petViewModel.UserId});
             }
 
             return View();
@@ -89,11 +89,13 @@ namespace Lab4WebApplication.Controllers
             return RedirectToAction("List", new { UserId = pet.UserId });
         }
 
-        private Pet GetPet(int petId)
+        private PetViewModel GetPet(int petId)
         {
             var dbContext = new AppDbContext();
 
-            return dbContext.Pets.Find(petId);
+            var pet = dbContext.Pets.Find(petId);
+
+            return MapToPetViewModel(pet);
         }
 
         private ICollection<PetViewModel> GetPetsForUser(int userId)
