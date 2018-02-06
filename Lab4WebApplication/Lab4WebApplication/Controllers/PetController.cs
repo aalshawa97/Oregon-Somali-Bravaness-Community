@@ -34,7 +34,7 @@ namespace Lab4WebApplication.Controllers
             if (ModelState.IsValid)
             {
                 Save(petViewModel);
-                return RedirectToAction("List", new { UserId = petViewModel.UserId });
+                return RedirectToAction("List", new { petViewModel.UserId });
             }
 
             return View();
@@ -51,11 +51,13 @@ namespace Lab4WebApplication.Controllers
         [HttpPost]
         public ActionResult Edit(PetViewModel petViewModel)
         {
+            petViewModel.UserId = GetPet(petViewModel.Id).UserId;
+
             if (ModelState.IsValid)
             {
                 UpdatePet(petViewModel);
 
-                return RedirectToAction("List",new { userid =  petViewModel.UserId});
+                return RedirectToAction("List",new { petViewModel.UserId});
             }
 
             return View();
@@ -84,7 +86,8 @@ namespace Lab4WebApplication.Controllers
             pet.Name = petViewModel.Name;
             pet.Age = petViewModel.Age;
             pet.NextCheckup = petViewModel.NextCheckup;
-            pet.VetName = pet.VetName;
+            pet.VetName = petViewModel.VetName;
+            pet.UserId = petViewModel.UserId;
         }
 
         public ActionResult Delete(int id)
