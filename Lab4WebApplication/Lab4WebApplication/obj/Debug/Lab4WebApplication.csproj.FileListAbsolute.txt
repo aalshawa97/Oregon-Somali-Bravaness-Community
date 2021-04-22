@@ -376,3 +376,10 @@ C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication
 C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.pdb
 C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Facebook.dll
 C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Facebook.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Owin.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Owin.Security.OAuth.xml

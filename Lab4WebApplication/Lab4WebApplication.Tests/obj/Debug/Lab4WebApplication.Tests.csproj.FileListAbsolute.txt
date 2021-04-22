@@ -128,3 +128,12 @@ C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication
 C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\obj\Debug\Lab4WebApplication.Tests.csproj.CopyComplete
 C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\obj\Debug\Lab4WebApplication.Tests.dll
 C:\Users\abdul\Source\Repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\obj\Debug\Lab4WebApplication.Tests.pdb
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Facebook.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Owin.dll
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Facebook.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\abdul\source\repos\CST356Week4Lab\Lab4WebApplication\Lab4WebApplication.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
