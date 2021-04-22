@@ -35,7 +35,7 @@ namespace Lab4WebApplication.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("I am a co-founder of the first Oregon Somali Bravaness Community website for all of the Pacific Northwest. Responsibilities include maintaining excellent communication with members and leaders of the organization. My responsibilities forced me to learn, and apply proper web development procedures. They also pushed me toward developing leadership skills required for organizing large teams to hold events for 10+ people. As a community run organization, a big challenge is generating our own revenues and expenses through the events we hold. It is essential that events are successful because the organization's success depend on it.", result.ViewBag.Message);
         }
 
         [TestMethod]
