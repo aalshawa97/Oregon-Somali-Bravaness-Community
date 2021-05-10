@@ -27,5 +27,7 @@ namespace Lab4WebApplication.Data.Entities
         public int YearsInSchool { get; set; }
 
         public ICollection<Pet> Pets { get; set; }
+
+        public ICollection<Event> Events { get; set; }
     }
 }
