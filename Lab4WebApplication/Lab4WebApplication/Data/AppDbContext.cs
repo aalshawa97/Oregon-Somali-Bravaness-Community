@@ -21,6 +21,7 @@ namespace Lab4WebApplication.Data
 
         public virtual DbSet<User> Users {get; set;}
         public virtual DbSet<Pet> Pets {get; set;}
+        public virtual DbSet<Event> Events { get; set; }
 
         public class AppDbInitializer: DropCreateDatabaseIfModelChanges<AppDbContext>
         {

@@ -192,7 +192,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\View\EventViewController.cs" />
+    <Compile Include="Models\View\EventViewModel.cs" />
     <Compile Include="Models\View\PetViewModel.cs" />
     <Compile Include="Models\View\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

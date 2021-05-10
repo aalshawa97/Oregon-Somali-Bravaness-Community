@@ -13,5 +13,6 @@ namespace Lab4WebApplication.Data.Entities
 
         [MaxLength(32)]
         public string EventName { get; set; }
+        public int UserId { get; internal set; }
     }
 }
