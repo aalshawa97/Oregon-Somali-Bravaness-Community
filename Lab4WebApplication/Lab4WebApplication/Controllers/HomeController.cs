@@ -20,6 +20,13 @@ namespace Lab4WebApplication.Controllers
             return View();
         }
 
+        public ActionResult Career()
+        {
+            ViewBag.Message = "Search jobs!";
+
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Hi, how can we help?";
