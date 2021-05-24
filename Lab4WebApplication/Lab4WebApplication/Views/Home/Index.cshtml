@@ -3,20 +3,55 @@
 }
 
 <div class="jumbotron">
-    <h1>OSBCPDX</h1>
+    <h1 style="color:deepskyblue">OSBCPDX</h1>
     <p class="lead">We are a politcally independent and non-profit organization located in Portland. We are united and strengthen our community.</p>
     <p><a href="https://www.facebook.com/OSBCPDX/" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
+<h1>
+    Main Menu
+</h1>
+<asp:Menu id="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx">
+                </asp:MenuItem>
+
+                <asp:MenuItem Text="Employee" Value="Home" NavigateUrl="~/Home.aspx">
+                    <asp:MenuItem Text="Upload Resume" Value="Upload Resume" NavigateUrl="~/UploadResume.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Edit Resume" Value="Upload Resume" NavigateUrl="~/EditResume.aspx">
+                    </asp:MenuItem>                                                                                                                                                                                                                                                                                                           
+                </asp:MenuItem>
+                <asp:MenuItem Text="Employee" Value="Home" NavigateUrl="~/Home.aspx">
+                    <asp:MenuItem Text="Upload Resume" Value="Upload Resume" NavigateUrl="~/UploadResume.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Edit Resume" Value="Upload Resume" NavigateUrl="~/EditResume.aspx">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+<tr>
+    <td style="height: 500px; background-color: #D8D8D8; width: 150px">
+        
+    </td>
+    
+    <td style = height:500px; background-color: #E6E6E6"; width: 650px">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <h1>Section that changes on a page by page basis</h1>
+        </asp:ContentPlaceHolder>
+    </td>
+    
+</tr>
+
 <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
+</div>
+    <li>@Html.ActionLink("User", "List", "User")</li>    <ul class="nav navbar-nav">
         <li>@Html.ActionLink("Home", "Index", "Home")</li>
         <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("User", "List", "User")</li>
         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
         <li>@Html.ActionLink("Careers", "Career", "Home")</li>
     </ul>
-</div>
+
 
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
@@ -27,7 +62,7 @@
     <div class="col-md-4">
         <h2>Nonprofit Organization</h2>
         <p>
-            As a nonprofit organization, Oregon Somali Bravaness Community brings unprecedented compassion and grace to all people, while our spirit and wit changes what the public expected a nonprofit organization to be. We do not believe in limits!
+            As a nonprofit organization, Oregon Somali Bravaness Community brings unprecedented compassion and grace to all people, while our spirit and wit changes what the public expected a nonprofit organization to be. We do not believe in limits!                                                                                                                                                                                             
         </p>
         <p><a class="btn btn-default" href="https://www.councilofnonprofits.org/what-is-a-nonprofit">Learn more &raquo;</a></p>
     </div>
