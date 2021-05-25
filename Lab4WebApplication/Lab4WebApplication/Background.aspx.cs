@@ -19,10 +19,11 @@ namespace Lab4WebApplication
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionString = connectionString = (ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString);
+            //string connectionString = connectionString = (ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString);
             // removed Persist Security Info=True; 
+            string connectionString = @"Data Source=LAPTOP-E4UQ9M0E\15039;Initial Catalog=Demodb;User ID=sa;Password=demol23";
 
-            if(connectionString != null || connectionString != "")
+            if (connectionString != null || connectionString != "")
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
