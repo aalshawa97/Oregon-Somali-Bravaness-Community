@@ -19,25 +19,20 @@ namespace Lab4WebApplication
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnect;
-            /*using (sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString)) ;
+            string connectionString = connectionString = (ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString);
+            // removed Persist Security Info=True; 
+
+            if(connectionString != null || connectionString != "")
             {
-                sqlConnect.Open();
-                string query = "SELECT COUNT(1) FROM tblUser WHERE username=@username AND password=@password";
-                SqlCommand sqlCmd = new SqlCommand(query, sqlConnect);
-                sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
-                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if(count == 1)
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    Session["username"] = txtUserName.Text.Trim(); 
-                    Response.Redirect("Dashboard.aspx");
+                    if (con.State == ConnectionState.Closed)
+                    {
+                        con.Open();
+                    }
                 }
-                else
-                {
-                    lblErrorMessage.Visible = true;
-                }
-            }*/
+            }
+
         }
     }
 }
