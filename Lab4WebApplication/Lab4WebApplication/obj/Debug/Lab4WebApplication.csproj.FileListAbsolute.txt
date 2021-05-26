@@ -654,3 +654,5 @@ C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplica
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Net.Http.Formatting.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Web.Http.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\x86\sqlite3.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\x64\sqlite3.dll
