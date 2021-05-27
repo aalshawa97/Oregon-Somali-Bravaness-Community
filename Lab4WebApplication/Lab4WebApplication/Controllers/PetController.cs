@@ -81,7 +81,7 @@ namespace Lab4WebApplication.Controllers
             dbContext.SaveChanges();
         }
 
-        private void CopyToPet(PetViewModel petViewModel, Pet pet)
+        private void CopyToPet(PetViewModel petViewModel, Data.Entities.Pet pet)
         {
             pet.Name = petViewModel.Name;
             pet.Age = petViewModel.Age;
@@ -149,9 +149,9 @@ namespace Lab4WebApplication.Controllers
             }
         }
 
-        private Pet MapToPet(PetViewModel petViewModel)
+        private Data.Entities.Pet MapToPet(PetViewModel petViewModel)
         {
-            return new Pet
+            return new Data.Entities.Pet
             {
                 Id = petViewModel.Id,
                 Name = petViewModel.Name,
@@ -162,7 +162,7 @@ namespace Lab4WebApplication.Controllers
             };
         }
 
-        private PetViewModel MapToPetViewModel(Pet pet)
+        private PetViewModel MapToPetViewModel(Data.Entities.Pet pet)
         {
             return new PetViewModel
             {

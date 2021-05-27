@@ -7,11 +7,24 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
+//using MVCLogin.Models;
 
 namespace Lab4WebApplication.Controllers
 {
-    public class Login : Controller
+    public class LoginController : Controller
     {
+        //GET: Login
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [System.Web.Http.HttpPost]
+        public ActionResult Autherize(/*MVCLogin.Models.*/)
+        {
+            return View();
+        }
+        
         public object LoginControl { get; private set; }
 
         // GET api/<controller>
@@ -37,15 +50,16 @@ namespace Lab4WebApplication.Controllers
         {
         }
 
-        /*
         protected void LoginControl_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            bool authenticated = this.ValidateCredentials(LoginControl.UserName, LoginControl.Password);
-            if(authenticated)
+            bool authenticated = false;// this.ValidateCredentials(LoginControl.UserName, LoginControl.Password);
+            if (authenticated)
             {
-                FormsAuthentication.RedirectFromLoginPage(LoginControl.UserName, LoginControl.Password);
+                //FormsAuthentication.RedirectFromLoginPage(LoginControl.UserName, LoginControl.Password);
             }
         }
+        /*
+        
 
         public bool IsAlphaNumeric(string text)
         {

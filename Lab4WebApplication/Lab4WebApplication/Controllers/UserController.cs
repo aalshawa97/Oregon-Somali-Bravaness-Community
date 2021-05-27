@@ -100,7 +100,7 @@ namespace Lab4WebApplication.Controllers
             return userViewModels;
         }
 
-        private void SaveUser(User user)
+        private void SaveUser(Data.Entities.User user)
         {
             var dbContext = new AppDbContext();
 
@@ -133,9 +133,9 @@ namespace Lab4WebApplication.Controllers
             }
         }
 
-        private User MapToUser(UserViewModel userViewModel)
+        private Data.Entities.User MapToUser(UserViewModel userViewModel)
         {
-            return new User
+            return new Data.Entities.User
             {
                 Id = userViewModel.Id,
                 FirstName = userViewModel.FirstName,
@@ -148,7 +148,7 @@ namespace Lab4WebApplication.Controllers
             };
         }
 
-        private UserViewModel MapToUserViewModel(User user)
+        private UserViewModel MapToUserViewModel(Data.Entities.User user)
         {
             return new UserViewModel
             {
@@ -163,7 +163,7 @@ namespace Lab4WebApplication.Controllers
             };
         }
 
-        private void CopyToUser(UserViewModel userViewModel, User user)
+        private void CopyToUser(UserViewModel userViewModel, Data.Entities.User user)
         {
             user.FirstName = userViewModel.FirstName;
             user.MiddleName = userViewModel.MiddleName;

@@ -20,7 +20,7 @@ namespace Lab4WebApplication.Controllers
             return View(events);
         }
 
-        private EventViewModel MapToEventViewModel(Event aEvent)
+        private EventViewModel MapToEventViewModel(Data.Entities.Event aEvent)
         {
             return new EventViewModel
             {
@@ -29,6 +29,7 @@ namespace Lab4WebApplication.Controllers
       
             };
         }
+
         private ICollection<EventViewModel> GetEventsForUser(int userId)
         {
             var eventViewModels = new List<EventViewModel>();
