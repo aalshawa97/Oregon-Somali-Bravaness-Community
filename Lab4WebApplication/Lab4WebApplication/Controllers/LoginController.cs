@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 //using MVCLogin.Models;
 
 namespace Lab4WebApplication.Controllers
@@ -20,7 +22,7 @@ namespace Lab4WebApplication.Controllers
         }
 
         [System.Web.Http.HttpPost]
-        public ActionResult Autherize(/*MVCLogin.Models.*/)
+        public ActionResult Autherize(/*MVCLogin.Models*/)
         {
             return View();
         }

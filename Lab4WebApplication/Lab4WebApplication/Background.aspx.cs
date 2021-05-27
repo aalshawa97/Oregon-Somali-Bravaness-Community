@@ -30,12 +30,12 @@ namespace Lab4WebApplication
                  {
                     if (con.State == ConnectionState.Closed)
                     {
-                        string query = "SELECT COUNT(1) from tblUser WHERE username=@username and password=@password";
+                        string query = "SELECT COUNT(1) from dbo.tblUser WHERE username=@username and password=@password";
                         SqlCommand  sqlCmd = new SqlCommand(query, con);
                         sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
                         con.Open();
-                        /*int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                        int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
                         if(count == 1)
                         {
                             Session["username"] = txtUserName.Text.Trim();
@@ -45,8 +45,6 @@ namespace Lab4WebApplication
                         {
                             lblErrorMessage.Visible = true;
                         }
-                        */
-                        
                     }
                 }
             

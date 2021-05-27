@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -18,6 +19,15 @@ namespace Lab4WebApplication.Data.Entities
 
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "This field is required.")]
+
+        [NotMapped]
+        [System.ComponentModel.DataAnnotations.Compare("Password")]
+        public string ConfirmPassword { get; set; }
+        public string FullName()
+        {
+            return this.FirstName + " " + this.LastName;
+        }
+
         public string Password { get; set; }
 
         [MaxLength(32)]

@@ -700,3 +700,4 @@ C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplica
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Extensions.ObjectPool.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.Net.Http.Headers.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Text.Encodings.Web.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Elmah.dll
