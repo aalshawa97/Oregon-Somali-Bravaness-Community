@@ -9,6 +9,7 @@ using System.Data;
 using System.Configuration;
 using System.Data.Common;
 using System.Threading.Tasks;
+using System.Data.OleDb;
 namespace Lab4WebApplication
 {
     public partial class Background : System.Web.UI.Page
@@ -18,6 +19,17 @@ namespace Lab4WebApplication
             lblErrorMessage.Visible = false;
         }
 
+        //[Test]
+        public void ShouldNotAuthenticateUserWithInvalidPassword()
+        {
+            //IMyMockDa mockDa = new MockDataAccess();
+        }
+        /*
+        public int GetSomeProdId()
+        {
+            int count = 0;
+        }
+        */
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
@@ -30,23 +42,33 @@ namespace Lab4WebApplication
                  {
                     if (con.State == ConnectionState.Closed)
                     {
-                        string query = "SELECT COUNT(1) from dbo.tblUser WHERE username=@username and password=@password";
+                        string query = "SELECT COUNT(1) from dbo.tblUser WHERE @username='user123' and @password='123'";
+                        //string query = "SELECT COUNT(1) from dbo.tblUser";
                         SqlCommand  sqlCmd = new SqlCommand(query, con);
+                        txtUserName.Text = "user123";
+                        txtPassword.Text = "123";
                         sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
                         con.Open();
-                        int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                        if(count == 1)
-                        {
-                            Session["username"] = txtUserName.Text.Trim();
-                            Response.Redirect("Dashboard.aspx");
-                        }
-                        else
-                        {
-                            lblErrorMessage.Visible = true;
-                        }
-                    }
+                       
+                        //int count = (Int32)(sqlCmd.ExecuteScalar());
+                        /*
+                       if(count == 1)
+                       {
+                           Session["username"] = txtUserName.Text.Trim();
+                           Response.Redirect("Dashboard.aspx");
+                       }
+                       else
+                       {
+                           lblErrorMessage.Visible = true;
+                       }
+                       */
+
                 }
+
+                //Close the database connection
+                con.Close();
+            }
             
 
         }
