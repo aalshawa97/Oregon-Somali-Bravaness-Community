@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using MongoDB.Driver.Core.Configuration;
+using NUnit.Framework.Internal;
 
 namespace Lab4WebApplication
 {
@@ -92,14 +93,51 @@ namespace Lab4WebApplication
 
         }
 
-        public static void CreateDatabase()
+        public static void ExecuteReader()
         {
-            /*
-            using (var connection = new sqlConnection(FiddleHelper).GetConnectionStringSqlServer()))
+            string query = "SELECT COUNT(1) from tblUser WHERE username='user123' and password='123'";
+
+            using (SqlConnection con = new SqlConnection(query))
             {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand("SELECT username, password FROM tblUser ", con))
+                {
+                    cmd.Parameters.AddWithValue("@ID", "0");
+                    using(SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while(reader.Read())
+                        {
+                            string userName = (string)reader["Username"];
+                            string passWord = (string)reader["Password"];
+                            Console.WriteLine($"{userName}\n{passWord}");
+                        }
+                    }
+                }
 
             }
-            */
         }
+
+        /*
+        public static int SaveTest(Test newTest)
+        {
+            var conn = DBConnect.Connection();
+        }
+
+        
+        public static void SqlDataAdapter()
+        {
+            using (SqlConnection con = new SqlConnection(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntern=ReadWrite;MultiSubnetFailover=False;User Id=user123;Password=123;"))
+            {
+                con.Open();
+                using (SqlDataAdapter da = new SqlDataAdapter("Select Username, Password FROM tblUser", con))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@ID", "UserID");
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    //myDataGridView.DataSource = dt;
+                }
+            }
+        }
+        */
     }
 }
