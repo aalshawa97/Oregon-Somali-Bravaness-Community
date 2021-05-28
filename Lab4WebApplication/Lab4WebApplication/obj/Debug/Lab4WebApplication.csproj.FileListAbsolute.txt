@@ -702,3 +702,17 @@ C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplica
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Text.Encodings.Web.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Elmah.dll
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Oracle.ManagedDataAccess.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Dapper.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Dapper.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\snappy32.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\snappy64.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\libzstd.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\mongocrypt.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\DnsClient.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Bson.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Driver.Core.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Libmongocrypt.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\SharpCompress.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\DnsClient.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Bson.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Driver.Core.xml

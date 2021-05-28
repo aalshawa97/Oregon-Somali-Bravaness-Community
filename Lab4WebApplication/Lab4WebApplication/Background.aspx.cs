@@ -10,6 +10,9 @@ using System.Configuration;
 using System.Data.Common;
 using System.Threading.Tasks;
 using System.Data.OleDb;
+using System.Data.SqlClient;
+using MongoDB.Driver.Core.Configuration;
+
 namespace Lab4WebApplication
 {
     public partial class Background : System.Web.UI.Page
@@ -30,6 +33,18 @@ namespace Lab4WebApplication
             int count = 0;
         }
         */
+
+        //Used for getting a single integer data
+        public static int GetID(string SelectStatement)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;User Id=user123;Password=123;");
+            con.Open();
+            SqlCommand com = new SqlCommand(SelectStatement, con);
+            int id = Convert.ToInt32(com.ExecuteScalar());
+            con.Close();
+            return id;
+        }
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
@@ -42,16 +57,20 @@ namespace Lab4WebApplication
                  {
                     if (con.State == ConnectionState.Closed)
                     {
-                        string query = "SELECT COUNT(1) from dbo.tblUser WHERE @username='user123' and @password='123'";
+                        string query = "SELECT COUNT(1) from tblUser WHERE username='user123' and password='123'";
                         //string query = "SELECT COUNT(1) from dbo.tblUser";
-                        SqlCommand  sqlCmd = new SqlCommand(query, con);
+                        SqlCommand  sqlCmdSelect = new SqlCommand(query, con);
                         txtUserName.Text = "user123";
                         txtPassword.Text = "123";
-                        sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+                        sqlCmdSelect.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
+                        sqlCmdSelect.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
                         con.Open();
-                       
-                        //int count = (Int32)(sqlCmd.ExecuteScalar());
+                        //Execute scalar only gets the first row and column for the query results
+                        //int count = (Int32)(sqlCmdSelect.ExecuteScalar());
+                        query = "UPDATE tblUser SET username = 'Sakawadin Ahmed Noor' WHERE userid = 0";
+                        SqlCommand sqlCmdUpdate = new SqlCommand(query, con);
+                        //int effectedRow = sqlCmdUpdate.ExecuteNonQuery();
+                        con.Close();
                         /*
                        if(count == 1)
                        {
@@ -71,6 +90,16 @@ namespace Lab4WebApplication
             }
             
 
+        }
+
+        public static void CreateDatabase()
+        {
+            /*
+            using (var connection = new sqlConnection(FiddleHelper).GetConnectionStringSqlServer()))
+            {
+
+            }
+            */
         }
     }
 }
