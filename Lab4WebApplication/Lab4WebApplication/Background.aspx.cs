@@ -2,14 +2,26 @@
 using System.Data.SqlClient;
 using System.Data;
 using System.Data.Common;
+using System.Configuration;
 
 namespace Lab4WebApplication
 {
+
     public partial class Background : System.Web.UI.Page
     {
+        static private string GetConnectionString()
+        {
+            return "Data Source=(localdb)\\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        }
+        string connectionString = GetConnectionString();
         protected void Page_Load(object sender, EventArgs e)
         {
             lblErrorMessage.Visible = false;
+            if(IsPostBack)
+            {
+                SqlConnection conn = new SqlConnection(GetConnectionString());
+            }
         }
 
         //[Test]
@@ -107,6 +119,11 @@ namespace Lab4WebApplication
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CreateAccount(object sender, EventArgs e)
         {
 
         }
