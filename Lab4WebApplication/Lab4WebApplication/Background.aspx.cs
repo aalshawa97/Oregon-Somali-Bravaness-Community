@@ -21,6 +21,24 @@ namespace Lab4WebApplication
             if(IsPostBack)
             {
                 SqlConnection conn = new SqlConnection(GetConnectionString());
+                conn.Open();
+                string checkUser = "";
+                SqlCommand com = new SqlCommand(checkUser, conn);
+                int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+                conn.Close();
+                if(temp == 1)
+                {
+                    conn.Open();
+                    string checkPasswordQuery = "";
+                    SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
+                    string password = passComm.ExecuteScalar().ToString();
+                    /*
+                     * if(password == TextBoxPassword.Text)
+                    {
+
+                    }
+                    */
+                }
             }
         }
 
