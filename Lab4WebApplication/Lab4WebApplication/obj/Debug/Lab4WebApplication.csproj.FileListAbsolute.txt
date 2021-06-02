@@ -480,7 +480,6 @@ C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplica
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Web.WebPages.Deployment.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Web.WebPages.Razor.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Web.Optimization.xml
-C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.csprojAssemblyReference.cache
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.csproj.CoreCompileInputs.cache
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.csproj.CopyComplete
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.dll
@@ -718,3 +717,16 @@ C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplica
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\MongoDB.Driver.Core.xml
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\nunit.framework.dll
 C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\nunit.framework.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\obj\Debug\Lab4WebApplication.csproj.AssemblyReference.cache
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.TeamFoundation.Common.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.VisualStudio.Services.Common.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.VisualStudio.Services.WebApi.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Data.SqlClient.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Security.Cryptography.Cng.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Security.Cryptography.OpenSsl.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Security.Cryptography.ProtectedData.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\System.Xml.XPath.XmlDocument.dll
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.TeamFoundation.Common.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.VisualStudio.Services.Common.xml
+C:\Users\15039\Documents\GitHub\Oregon-Somali-Bravaness-Community\Lab4WebApplication\Lab4WebApplication\bin\Microsoft.VisualStudio.Services.WebApi.xml

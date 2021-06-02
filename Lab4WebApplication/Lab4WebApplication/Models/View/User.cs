@@ -15,6 +15,8 @@ namespace Lab4WebApplication.Models.View
             Pets = new HashSet<Pet>();
         }
 
+        public string Password { get; set; }
+
         public int Id { get; set; }
 
         [StringLength(32)]

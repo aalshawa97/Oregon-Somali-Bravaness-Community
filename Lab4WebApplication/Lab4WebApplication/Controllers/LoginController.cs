@@ -9,22 +9,51 @@ using System.Web.Mvc;
 using System.Web.UI.WebControls;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Lab4WebApplication.Models;
+using Microsoft.VisualStudio.Services.Account;
+using Lab4WebApplication.Data.Entities;
 //using MVCLogin.Models;
 
 namespace Lab4WebApplication.Controllers
 {
     public class LoginController : Controller
     {
+        SqlConnection con = new SqlConnection();
+        SqlCommand com = new SqlCommand();
+        SqlDataReader dr;
         //GET: Login
         public ActionResult Index()
         {
             return View();
         }
 
-        [System.Web.Http.HttpPost]
-        public ActionResult Autherize(/*MVCLogin.Models*/)
+        //GET: Account
+        public ActionResult Login()
         {
             return View();
+        }
+        void connectionString()
+        {
+            con.ConnectionString = "data source= LAPTOP-E4UQ9MOE; database=WPF; integrated security = SSPI";
+        }
+        [System.Web.Http.HttpPost]
+        public ActionResult Autherize(User acc)
+        {
+            connectionString();
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from tblUser where UserName='" + acc.UserName + "' and password ='"+ acc.Password + "'";
+            dr = com.ExecuteReader();
+            if(dr.Read())
+            {
+                con.Close();
+                return View();
+            }
+            else
+            {
+                con.Close();
+                return View();
+            }
         }
         
         public object LoginControl { get; private set; }

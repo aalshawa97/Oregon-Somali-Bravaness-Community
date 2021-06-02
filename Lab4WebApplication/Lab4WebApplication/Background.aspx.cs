@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
-using System.Configuration;
 using System.Data.Common;
-using System.Threading.Tasks;
-using System.Data.OleDb;
-using System.Data.SqlClient;
-using MongoDB.Driver.Core.Configuration;
-using NUnit.Framework.Internal;
 
 namespace Lab4WebApplication
 {
@@ -115,6 +104,11 @@ namespace Lab4WebApplication
                 }
 
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*

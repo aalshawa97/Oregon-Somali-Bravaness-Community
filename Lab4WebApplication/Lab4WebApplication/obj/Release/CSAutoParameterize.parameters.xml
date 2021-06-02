@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
+  <parameter name="conStrAbdullah-Web.config Connection String" description="conStrAbdullah Connection String used in web.config by the application to access the database." defaultValue="Server=.\sql2018;Database=Sample;Trusted_Connection=True;Data Source=(local);Initial Catalog=Abdullah;User ID=user1; Password = 123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\15039\\Documents\\GitHub\\Oregon-Somali-Bravaness-Community\\Lab4WebApplication\\Lab4WebApplication\\obj\\Release\\Package\\PackageTmp\\Views\\Web\.config$" match="/configuration/connectionStrings/add[@name='conStrAbdullah']/@connectionString" />
+  </parameter>
   <parameter name="AppDbContext-Web.config Connection String" description="AppDbContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=App;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\AppDatabase.mdf" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\abdul\\source\\repos\\CST356Week4Lab\\Lab4WebApplication\\Lab4WebApplication\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AppDbContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\15039\\Documents\\GitHub\\Oregon-Somali-Bravaness-Community\\Lab4WebApplication\\Lab4WebApplication\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AppDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="LoginViewModel-Web.config Connection String" description="LoginViewModel Connection String used in web.config by the application to access the database." defaultValue="data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\AppDatabase.mdf;integrated security=True;connect timeout=30;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\15039\\Documents\\GitHub\\Oregon-Somali-Bravaness-Community\\Lab4WebApplication\\Lab4WebApplication\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LoginViewModel']/@connectionString" />
   </parameter>
 </parameters>
