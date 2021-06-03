@@ -24,21 +24,23 @@ namespace Lab4WebApplication
                 conn.Open();
                 string checkUser = "";
                 SqlCommand com = new SqlCommand(checkUser, conn);
-                int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+                //com.ExecuteScalar() = "";
+                //int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
                 conn.Close();
+                /*
                 if(temp == 1)
                 {
                     conn.Open();
                     string checkPasswordQuery = "";
                     SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
                     string password = passComm.ExecuteScalar().ToString();
-                    /*
-                     * if(password == TextBoxPassword.Text)
+                    if(password == TextBoxPassword.Text)
                     {
 
                     }
-                    */
+                    
                 }
+                */
             }
         }
 
