@@ -29,6 +29,9 @@
         <p>
             <asp:Button ID="btnForgotPassword" runat="server" style="margin-bottom: 0px" Text="Forgot password" />
         </p>
+        <p>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Create account" />
+        </p>
         <asp:Label ID="lblErrorMessage" runat="server" Text="Incorrect input!" ForeColor="Red"></asp:Label>
     </form>
 </body>
