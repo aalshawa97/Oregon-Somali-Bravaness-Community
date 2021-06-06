@@ -5,6 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+       <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag() { dataLayer.push(arguments); }
+           gtag('js', new Date());
+
+           gtag('config', 'UA-149402878-1');
+       </script>
 </head>
 <body>
     <form id="form1" runat="server">

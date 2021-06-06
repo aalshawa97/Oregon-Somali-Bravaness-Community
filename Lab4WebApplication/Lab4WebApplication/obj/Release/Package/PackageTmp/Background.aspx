@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+   
     <title></title>
     <style>
         body
@@ -11,8 +12,17 @@
             background-color:wheat;
         }
     </style>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149402878-1');
+</script>
 </head>
 <body>
+    <a href='javascript:history.go(-1)'>Go Back to Previous Page</a>
+
     <form id="form1" runat="server">
         <div style="background-image: url('Images/oregonSomaliBravanessComunity.jpg'); height: 360px;">
         </div>
@@ -36,3 +46,7 @@
     </form>
 </body>
 </html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149402878-1">
+</script>
+
