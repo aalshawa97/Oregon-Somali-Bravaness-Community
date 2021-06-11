@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*
+ * Abdullah Mutaz Alshawa
+ * 6/9/2021
+ * Event view model
+ */
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 
 namespace Lab4WebApplication.Models.View
 {
-    public class EventViewModel 
+    public class EventViewModel
     {
         public int Id { get; set; }
 

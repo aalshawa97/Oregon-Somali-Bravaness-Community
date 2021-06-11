@@ -1,10 +1,7 @@
 ﻿using Lab4WebApplication.Data;
-using Lab4WebApplication.Data.Entities;
 using Lab4WebApplication.Models.View;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Lab4WebApplication.Controllers
@@ -57,7 +54,7 @@ namespace Lab4WebApplication.Controllers
             {
                 UpdatePet(petViewModel);
 
-                return RedirectToAction("List",new { petViewModel.UserId});
+                return RedirectToAction("List", new { petViewModel.UserId });
             }
 
             return View();

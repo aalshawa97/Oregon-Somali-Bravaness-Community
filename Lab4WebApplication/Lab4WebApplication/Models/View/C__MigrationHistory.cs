@@ -1,10 +1,12 @@
+/*
+ * Abdullah Mutaz Alshawa
+ * 6/9/2021
+ * C migration history
+ */
 namespace Lab4WebApplication.Models.View
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("__MigrationHistory")]
     public partial class C__MigrationHistory

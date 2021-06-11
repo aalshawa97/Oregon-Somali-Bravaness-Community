@@ -1,7 +1,22 @@
-﻿@model IEnumerable<Lab4WebApplication.Models.View.PetViewModel>
+﻿<!--Abdullah Mutaz Alshawa-->
+<!--6/9/2021-->
+<!--List-->
+@model IEnumerable<Lab4WebApplication.Models.View.PetViewModel>
 @{
     ViewBag.Title = "Pets";
 }
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149402878-1">
+    </script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149402878-1');
+    </script>
+</head>
 <h2>List</h2>
 <p>
     @Html.ActionLink("Create New", "Create", new { userId = ViewBag.UserId })

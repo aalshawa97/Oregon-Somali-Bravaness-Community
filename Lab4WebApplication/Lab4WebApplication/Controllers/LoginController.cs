@@ -1,17 +1,12 @@
-﻿using System;
+﻿//Abdullah Mutaz Alshawa
+//6/9/2021
+//Login                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+using Lab4WebApplication.Data.Entities;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Lab4WebApplication.Models;
-using Microsoft.VisualStudio.Services.Account;
-using Lab4WebApplication.Data.Entities;
 //using MVCLogin.Models;
 
 namespace Lab4WebApplication.Controllers
@@ -42,9 +37,9 @@ namespace Lab4WebApplication.Controllers
             connectionString();
             con.Open();
             com.Connection = con;
-            com.CommandText = "select * from tblUser where UserName='" + acc.UserName + "' and password ='"+ acc.Password + "'";
+            com.CommandText = "select * from tblUser where UserName='" + acc.UserName + "' and password ='" + acc.Password + "'";
             dr = com.ExecuteReader();
-            if(dr.Read())
+            if (dr.Read())
             {
                 con.Close();
                 return View();
@@ -55,7 +50,7 @@ namespace Lab4WebApplication.Controllers
                 return View();
             }
         }
-        
+
         public object LoginControl { get; private set; }
 
         // GET api/<controller>
@@ -66,8 +61,8 @@ namespace Lab4WebApplication.Controllers
 
         //public ActionResult Details(int id)
         //{
-            //var user = GetUser(id);
-            ///return View(user);
+        //var user = GetUser(id);
+        ///return View(user);
         //}
 
         // GET api/<controller>/5

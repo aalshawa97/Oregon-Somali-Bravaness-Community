@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace Lab4WebApplication.Data.Entities
 {
@@ -14,7 +12,7 @@ namespace Lab4WebApplication.Data.Entities
         public int Id { get; set; }
 
         [DisplayName("User Name")]
-        [Required(ErrorMessage ="This field is required.")]
+        [Required(ErrorMessage = "This field is required.")]
         public string UserName { get; set; }
 
         [DataType(DataType.Password)]

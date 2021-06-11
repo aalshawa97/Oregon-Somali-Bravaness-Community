@@ -1,10 +1,10 @@
+/*Abdullah Mutaz Alshawa
+ * 6/9/2021
+ * Event
+ */
 namespace Lab4WebApplication.Models.View
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     public partial class Event
     {

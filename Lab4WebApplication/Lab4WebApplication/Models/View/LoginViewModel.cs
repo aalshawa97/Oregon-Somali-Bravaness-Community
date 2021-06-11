@@ -1,7 +1,8 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
+/*Abdullah Mutaz Alshawa
+ * 6/9/2021
+ * Login view model
+ */
 using System.Data.Entity;
-using System.Linq;
 
 namespace Lab4WebApplication.Models.View
 {

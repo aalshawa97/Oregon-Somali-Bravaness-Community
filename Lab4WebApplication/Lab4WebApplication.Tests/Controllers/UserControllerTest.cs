@@ -1,11 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NUnit.Framework.Internal;
-using System;
-using System.Data.Entity;
-using System.Data.SqlClient;
-
-namespace Lab4WebApplication.Tests.Controllers
+﻿namespace Lab4WebApplication.Tests.Controllers
 {
     /*
     [TestClass]

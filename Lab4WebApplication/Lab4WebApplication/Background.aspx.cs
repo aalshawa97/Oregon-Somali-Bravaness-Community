@@ -1,8 +1,12 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿/*
+Abdullah Mutaz Alshawa
+6/9/2021
+Background
+ */
+using System;
 using System.Data;
 using System.Data.Common;
-using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Lab4WebApplication
 {
@@ -18,7 +22,7 @@ namespace Lab4WebApplication
         protected void Page_Load(object sender, EventArgs e)
         {
             lblErrorMessage.Visible = false;
-            if(IsPostBack)
+            if (IsPostBack)
             {
                 SqlConnection conn = new SqlConnection(GetConnectionString());
                 conn.Open();
@@ -70,47 +74,47 @@ namespace Lab4WebApplication
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
-                //string connectionString = connectionString = (ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString);
-                // removed Persist Security Info=True; 
-                DbConnectionStringBuilder csb = new DbConnectionStringBuilder();
-                //Throws
-                //csb.ConnectionString = "Data Source = (local)\sqle2018; initial Catalog = LoginDB; integrated Security = True; User ID = user1; Password = 123;";
-                using (SqlConnection con = new SqlConnection(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;User Id=user123;Password=123;"))
-                 {
-                    if (con.State == ConnectionState.Closed)
-                    {
-                        string query = "SELECT COUNT(1) from tblUser WHERE username='user123' and password='123'";
-                        //string query = "SELECT COUNT(1) from dbo.tblUser";
-                        SqlCommand  sqlCmdSelect = new SqlCommand(query, con);
-                        txtUserName.Text = "user123";
-                        txtPassword.Text = "123";
-                        sqlCmdSelect.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
-                        sqlCmdSelect.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
-                        con.Open();
-                        //Execute scalar only gets the first row and column for the query results
-                        //int count = (Int32)(sqlCmdSelect.ExecuteScalar());
-                        query = "UPDATE tblUser SET username = 'Sakawadin Ahmed Noor' WHERE userid = 0";
-                        SqlCommand sqlCmdUpdate = new SqlCommand(query, con);
-                        //int effectedRow = sqlCmdUpdate.ExecuteNonQuery();
-                        con.Close();
-                        /*
-                       if(count == 1)
-                       {
-                           Session["username"] = txtUserName.Text.Trim();
-                           Response.Redirect("Dashboard.aspx");
-                       }
-                       else
-                       {
-                           lblErrorMessage.Visible = true;
-                       }
-                       */
+            //string connectionString = connectionString = (ConfigurationManager.ConnectionStrings["conStrAbdullah"].ConnectionString);
+            // removed Persist Security Info=True; 
+            DbConnectionStringBuilder csb = new DbConnectionStringBuilder();
+            //Throws
+            //csb.ConnectionString = "Data Source = (local)\sqle2018; initial Catalog = LoginDB; integrated Security = True; User ID = user1; Password = 123;";
+            using (SqlConnection con = new SqlConnection(@"Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;User Id=user123;Password=123;"))
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    string query = "SELECT COUNT(1) from tblUser WHERE username='user123' and password='123'";
+                    //string query = "SELECT COUNT(1) from dbo.tblUser";
+                    SqlCommand sqlCmdSelect = new SqlCommand(query, con);
+                    txtUserName.Text = "user123";
+                    txtPassword.Text = "123";
+                    sqlCmdSelect.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
+                    sqlCmdSelect.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+                    con.Open();
+                    //Execute scalar only gets the first row and column for the query results
+                    //int count = (Int32)(sqlCmdSelect.ExecuteScalar());
+                    query = "UPDATE tblUser SET username = 'Ahmed Noor' WHERE userid = 3";
+                    SqlCommand sqlCmdUpdate = new SqlCommand(query, con);
+                    //int effectedRow = sqlCmdUpdate.ExecuteNonQuery();
+                    con.Close();
+                    /*
+                   if(count == 1)
+                   {
+                       Session["username"] = txtUserName.Text.Trim();
+                       Response.Redirect("Dashboard.aspx");
+                   }
+                   else
+                   {
+                       lblErrorMessage.Visible = true;
+                   }
+                   */
 
                 }
 
                 //Close the database connection
                 con.Close();
             }
-            
+
 
         }
 
@@ -124,9 +128,9 @@ namespace Lab4WebApplication
                 using (SqlCommand cmd = new SqlCommand("SELECT username, password FROM tblUser ", con))
                 {
                     cmd.Parameters.AddWithValue("@ID", "0");
-                    using(SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        while(reader.Read())
+                        while (reader.Read())
                         {
                             string userName = (string)reader["Username"];
                             string passWord = (string)reader["Password"];

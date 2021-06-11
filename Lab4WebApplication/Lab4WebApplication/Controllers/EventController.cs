@@ -1,10 +1,10 @@
-﻿using Lab4WebApplication.Data;
-using Lab4WebApplication.Data.Entities;
+﻿//Abdullah Mutaz Alshawa
+//6/9/2021
+//Event controller
+using Lab4WebApplication.Data;
 using Lab4WebApplication.Models.View;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Lab4WebApplication.Controllers
@@ -26,7 +26,7 @@ namespace Lab4WebApplication.Controllers
             {
                 Id = aEvent.Id,
                 Name = aEvent.EventName
-      
+
             };
         }
 
@@ -38,14 +38,14 @@ namespace Lab4WebApplication.Controllers
 
             var events = dbContext.Events.Where(aEvent => aEvent.UserId == userId).ToList();
 
-            foreach(var aEvent in events)
+            foreach (var aEvent in events)
             {
                 var eventViewModel = MapToEventViewModel(aEvent);
 
             }
             return eventViewModels;
         }
-        
-        
+
+
     }
 }

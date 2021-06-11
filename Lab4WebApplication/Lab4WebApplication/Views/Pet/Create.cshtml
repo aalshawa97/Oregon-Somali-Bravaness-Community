@@ -1,7 +1,22 @@
-﻿@model Lab4WebApplication.Models.View.PetViewModel
+﻿<!--Abdullah Mutaz Alshawa-->
+<!--6/9/2021-->
+<!--Create-->
+@model Lab4WebApplication.Models.View.PetViewModel
 @{
     ViewBag.Title = "Create Pet";
 }
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <sceript async src="https://www.googletagmanager.com/gtag/js?id=UA-149402878-1">
+    </sceript>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149402878-1');
+    </script>
+</head>
 <h2>Create</h2>
 
 @using (Html.BeginForm())

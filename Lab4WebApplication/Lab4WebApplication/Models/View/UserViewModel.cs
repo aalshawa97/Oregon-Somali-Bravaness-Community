@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿/*Abdullah Mutaz Alshawa
+ * User view model
+ * 6/9/2021
+ */
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Lab4WebApplication.Models.View

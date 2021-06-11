@@ -486,6 +486,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\View\C__MigrationHistory.cs" />
+    <Compile Include="Models\View\ErrorViewModel.cs" />
     <Compile Include="Models\View\Event.cs" />
     <Compile Include="Models\View\EventViewModel.cs" />
     <Compile Include="Models\View\LoginViewModel.cs" />

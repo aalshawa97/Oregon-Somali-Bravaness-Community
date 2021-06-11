@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*Abdullah Mutaz Alshawa
+ * 6/9/2021
+ * Pet view model
+ */
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Lab4WebApplication.Models.View
 {
