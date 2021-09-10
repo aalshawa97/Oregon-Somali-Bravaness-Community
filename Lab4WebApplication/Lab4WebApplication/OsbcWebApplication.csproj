@@ -445,6 +445,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\IdentityHostingStartup.cs" />
     <Compile Include="Background.aspx.cs">
       <DependentUpon>Background.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -465,6 +466,7 @@
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\AppDbContext.cs" />
+    <Compile Include="Data\AuthDbContext.cs" />
     <Compile Include="Data\Entities\Event.cs" />
     <Compile Include="Data\Entities\Pet.cs" />
     <Compile Include="Data\Entities\User.cs" />
@@ -529,6 +531,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="libmongocrypt.so" />
     <Content Include="libmongocrypt.dylib" />
+    <Content Include="Models\View\Register.cshtml" />
     <None Include="packages.config" />
     <Content Include="mongocrypt.dll" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -548,6 +551,7 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Pages\Account\Registration.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Lab4WebApplicationDemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
